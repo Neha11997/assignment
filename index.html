@@ -4,9 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Document</title>
+
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    He;lllooo
+    <main>
+        <section class="signin-form-section">
+            <div class="container-fluid">
+                <div class="signin-form-container d-flex">
+                    <div class="col-50 flex-1 form-container">
+                        <div class="form-header d-flex flex-align-center">
+                            <div class="site-logo">
+                                <img class="img-responsive" src='./assets/images/icon.png' alt="Student HQ">
+                            </div>
+                            <h1 class="logo-text primary-text">Student<span class="text-bold">HQ</span></h2>
+                        </div>
+                       <div class="form-info">
+                           <h2 class="form-info-heading text-bold primary-text">
+                                Join our community today!
+                           </h2>
+                           <p class="form-info-desc">Try our platform for free. Get guidance from renowned experts in the field, talk to seniors, share with peers and so much more.</p>
+                       </div>
+                       <div class="signin-form-wrapper">
+                            <form class="signin-form">
+                                <div class="form-input-container">
+                                    <div class="form-input">
+                                        <label>
+                                            <input type="text" name="name" placeholder="Username" required/>
+                                        </label>
+                                    </div>
+                                    <div class="form-input">
+                                        <label>
+                                            <input type="email" name="email" placeholder="Email" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required/>
+                                        </label>
+                                    </div>
+                                    <div class="form-input">
+                                        <label>
+                                            <input type="password" name="password" placeholder="Password" minlength="8" required/>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-justify-center form-submit-btn width-md-90">
+                                    <button type="submit" title="Sign Up" class="btn-primary">Sign up</button>
+                                </div>
+                            </form>
+                            <div class="form-extra d-flex flex-col flex-align-center width-md-90">
+                                <p class="mt-30">or</p>
+                                <a class="mt-15" href="#" title="Sign up with google">
+                                    <div class="d-flex">
+                                        <img src='./assets/images/google-logo.png' alt="google signin">
+                                        <p class="text-bold ml-10">Sign up with Google</span>
+                                    </div> 
+                                </a>
+                                <p class="display-1 mt-40 text-bold text-center">Already have an account? <a class="ml-20 line line-h" href="#" title="login">Login</a></p> 
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-50 side-image-container flex-1 flex-align-center flex-justify-center">
+                        <img src='./assets/images/logo-full.png' alt="logo full" class="side-img img-responsive">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

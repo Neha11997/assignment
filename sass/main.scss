@@ -1,4 +1,12 @@
 @import './base/reset';
-@import './base.scss';
-@import './components/buttons';
+@import './base/fonts';
+@import './base/base';
+@import './base/typography';
+@import './base/utility';
+
+@import './layout/containers';
 @import './layout/form';
+
+@import './components/buttons';
+
+@import './pages/home';

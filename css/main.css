@@ -1,10 +1,290 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+@font-face {
+  font-family: 'noto-sans';
+  src: url(../assets/fonts/Noto_Sans/NotoSans-Regular.ttf);
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'noto-sans,bold';
+  src: url(../assets/fonts/Noto_Sans/NotoSans-Bold.ttf);
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'noto-sans,bold-italic';
+  src: url(../assets/fonts/Noto_Sans/NotoSans-BoldItalic.ttf);
+  font-weight: 700;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'noto-sans,italic';
+  src: url(../assets/fonts/Noto_Sans/NotoSans-Italic.ttf);
+  font-weight: 400;
+  font-style: italic; }
+
 * {
   box-sizing: border-box; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  font-family: 'noto-sans', sans-serif; }
 
-.container {
-  max-width: 100%;
-  margin: 0 auto;
-  @inc; }
+h1 {
+  font-size: 4rem;
+  line-height: 6rem; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 4.8rem;
+      line-height: 7.2rem; } }
+
+h2 {
+  font-size: 3.6rem;
+  line-height: 5.4rem; }
+
+p {
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+  color: #6a5f5f;
+  text-align: justify; }
+  p.display-1 {
+    font-size: 2.4rem;
+    line-height: 3.6rem; }
+
+a {
+  display: inline-block;
+  color: #eaa33e;
+  text-decoration: none; }
+
+.d-flex {
+  display: flex; }
+
+.flex-col {
+  flex-direction: column; }
+
+.flex-align-center {
+  align-items: center; }
+
+.flex-justify-center {
+  justify-content: center; }
+
+.col-50 {
+  width: 50%;
+  flex-basis: 50%; }
+
+.flex-1 {
+  flex-grow: 1; }
+
+.img-responsive {
+  max-width: 100%; }
+
+.primary-text {
+  color: #eaa33e; }
+
+.dark-text {
+  color: #6a5f5f; }
+
+.text-bold {
+  font-weight: 900; }
+
+@media (min-width: 768px) {
+  .width-md-90 {
+    max-width: 90%; } }
+
+.mt-15 {
+  margin-top: 15px; }
+
+.mt-30 {
+  margin-top: 30px; }
+
+.mt-40 {
+  margin-top: 40px; }
+
+.ml-10 {
+  margin-left: 10px; }
+
+.ml-20 {
+  margin-left: 20px; }
+
+.text-center {
+  text-align: center; }
+
+.line-h {
+  line-height: 2.3rem; }
+
+.container-fluid {
+  width: 100%; }
+
+.form-input:not(:last-of-type) {
+  margin-bottom: 60px; }
+
+label {
+  display: block; }
+
+input {
+  min-height: 33px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #6a5f5f;
+  line-height: 3.6rem;
+  border: 0;
+  border-bottom: 1px solid #000000;
+  width: 100%;
+  background: transparent; }
+  input:focus {
+    outline: none; }
+
+.btn-primary {
+  font-size: 2.4rem;
+  padding: 6px 30px;
+  border-radius: 50px;
+  line-height: 3.2rem;
+  font-weight: bold;
+  background: #eaa33e;
+  border-radius: 50px;
+  border: 0;
+  color: #6a5f5f; }
+  .btn-primary:focus {
+    outline: none; }
+
+.signin-form-container {
+  min-height: 100vh;
+  background: #F7F7F7; }
+
+.side-image-container {
+  background-color: #262626;
+  display: none; }
+  @media (min-width: 768px) {
+    .side-image-container {
+      display: flex; } }
+  .side-image-container .side-img {
+    padding: 10px; }
+
+.form-container {
+  padding: 20px; }
+  @media (min-width: 992px) {
+    .form-container {
+      padding: 30px 20px 20px 41px; } }
+
+.site-logo {
+  width: 36px;
+  min-width: 36px; }
+  @media (min-width: 768px) {
+    .site-logo {
+      width: 42px;
+      min-width: 42px; } }
+
+.logo-text {
+  margin-left: 19px;
+  font-weight: 400; }
+
+.form-info {
+  margin-top: 60px; }
+  @media (min-width: 992px) {
+    .form-info {
+      margin-top: 172px; } }
+
+.signin-form-wrapper {
+  margin-top: 85px; }
+
+.form-input-container {
+  max-width: 100%; }
+  @media (min-width: 992px) {
+    .form-input-container {
+      max-width: 80%; } }
+
+.form-submit-btn {
+  margin-top: 45px; }
+
+.line {
+  padding-bottom: 0.1px;
+  border-bottom-style: solid;
+  border-bottom-width: 3.1px;
+  width: fit-content; }
